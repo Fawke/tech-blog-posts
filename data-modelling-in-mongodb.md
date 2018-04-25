@@ -133,3 +133,26 @@
 	*c. db.exampleCollection.find().skip(`<number of records to skip>`).limit(`<number of records to return>`)
 	d. db.exampleCollection.find().page(`<number of records to skip>`, `<number of records to return>`)
 	e. Pagination is not supported in MongoDB
+
+### Which is TRUE about Data modeling in MongoDb?
+
+	a. De-normalization is preferred over normalization
+	b. Data modeling is done based on use case and nature of queries
+	c. Referencing data is preferred if a field or sub document has higher cardinality
+	*d. All of the Above
+	e. None of the Above
+
+### Which of below is TRUE regarding MongoDB
+
+	a. Storing petabytes of data on a single machine is recommended for faster reads
+	b. USe stored procedures for better query performance in MonoDB
+	*c. MongoDB guarantees consistency at a specific document level
+	d. None of the above
+
+### Which of below Transaction model is usually adopted in NoSQL database based systems
+
+	a. ACID
+	b. SALT
+	*c. BASE
+	d. All of the Above
+	e. None of the Above
