@@ -52,8 +52,16 @@
     c. db = mongoose.createConnection('mongodb://user:pass@localhost:port,anotherhost:port, yetanother:port/database');
     *d. all are correct
 
-### 
+### How do you define compound indexes in mongoose.js?
 
-###
+    *a. mySchema.index({field1: 1, field2: 1}, {unique: true});
+    b. new Schema({field1: {type: Number, index: true}}, {field2: {type: Number, index: true}});
+    c. Both are correct
+    d. None are correct
 
-###
+### Which of these are NOT valid schema definitions in mongoose.js?
+
+    a. eggs: {type: Number, default: 8, min: [6, 'Too few eggs'], max: 12};
+    b. milk: {type: Number, required: true};
+    c. cheese: {type: String, enum: ['cheddar', 'parmesan', 'ricotta' ]}
+    *d.butter: {type: String, required: true, quantity: 6 }
