@@ -1,78 +1,158 @@
-## Data modelling in NoSQL, in our case, MongoDb
+### Which of below characters should NoSQL databases fulfill
 
-### What led to the rise of NoSQL Databases?
+	a. No relational constraints
+	b. Support partitioning, replication or Distributed database management
+	c. Fit into CAP Theorem
+	*d. All of the above
+	e. None of the above
 
-    a. Rise in Internet traffic and need to handle huge amounts of data.
-    b. Inability of Relational databases to scale horizontally.
-    c. Need for ACID transactions
-    d. Ease of modelling data based on use case.
-    e. Need for high consistency
-    f. a, b, c
-    g. a, b, d, e
-    *h. a, b, d
-    e. a, b, c, d, e
+### Which of below is false about Relational databases
 
-### Which of the following characteristic(s) is NOT true about NoSQL Databases?
+	a. Support relational constraints
+	b. No easy support for partitioning, replication or Distributed database management
+	c. Cannot fit into CAP Theorem
+	*d. Consistency is not guaranteed
+	e. None of the above
 
-    a. Schemaless
-    b. Non Relational
-    c. Open Source
-    d. Cluster Friendly
-    *e. Consistency over Availability
+### Which of below feature is not provided by MongoDB
 
-### MongoDb falls under what category of NoSQL Dababase family?
+	a. In-memory storage model
+	b. Timed expiration of data (Time To Live or T.T.L)
+	b. Sharding of data
+	c. Composite indexes
+	*d. decentralized database
 
-    a. key-value
-    b. column family
-    *c. document database
-    e. graph database
+### Which of below is true about `Scheamless` character of NoSQL databases
 
-### Which of the below statement(s) is TRUE about CAP theorem?
+	a. Very less schema is used
+	b. Data is unstructured
+	*c. Data structure is dynamic
+	d. Schema is undefined
+	e. All of the above
 
-    a. In case of a network partition, consistency can't be guaranteed but availability can.
-    b. Consistency is always maintained regardless of a network partition.
-    c. Availability takes precedence over consistency in case of a network partition.
-    *d. Ony one out of the two, consistency or availability, can be guaranteed in case of network partition
+### What type of NoSQL database is MongoDb ?
 
-### Who gets to decide which parameter, either consistency or availability, should be given more precendence over the other?
+	a. Key-Value pair
+	b. Columnar family
+	*c. Document oriented
+	d. Graph database
+	e. None of the Above
+
+### Which of below key is valid in MongoDB
+
+	a. Primary Key
+	*b. Unique Key
+	c. Foreign Key
+	d. All of the above
+	e. None of the above
+
+### Which of the below statement(s) is TRUE about CAP theorem
+
+	a. In case of a network partition, consistency can't be guaranteed but availability can.
+	b. Consistency is always maintained regardless of a network partition.
+	c. Availability takes precedence over consistency in case of a network partition.
+	*d. Ony one out of the two, consistency or availability, can be guaranteed in case of network partition
+	e. None of the above
+
+### Who gets to decide which parameter, either consistency or availability, should be given more precedence over the other?
 
     a. Database Administrators
     b. Developers
-    *c. Business people
-    e. All of them
+    *c. Business requirement
+    d. All of the above
+    e. None of the above
 
 ### Mark the statement(s) which is closest to being TRUE.
 
-    a. Relational databases will be completely replaced by NoSQL databases in the future.
-    b. NoSQL databases can't offer us ACID, hence not good for transaction based apps.
-    c. Polyglot databases are the future of app development.
-    d. All the statements are true.
-    *e. b, c
+	a. Relational databases will be completely replaced by NoSQL databases in the future.
+	b. NoSQL databases can't offer us ACID, hence not good for transaction based apps.
+	c. Polyglot databases are the future of app development.
+	d. All the statements are true.
+	*e. Only b & c
 
-### In which case, you'd choose a NoSQL database like MongoDb?
+### In which of below use case, you'd choose a NoSQL database like MongoDb
 
-    a. You want a rapid time to market.
-    b. Your app is heavy data heavy.
-    c. You want a quick prototype, poc.
-    *d. All of the above
+	a. You want a rapid time to market.
+	b. Your app is data heavy (large size of data)
+	c. You want a quick prototype, poc.
+	*d. All of the above
 
-### What is the closest analogy to a table in MongoDb?
+### Which of below does not belong to MongoDB
 
-    a. db
-    *b. collection
-    c. document
-    d. column
+	a. Collection
+	b. Document
+	c. Field
+	d. Index
+	e. All of the Above
+	*f. None of the Above
 
-### Which is NOT TRUE about Data modelling in MongoDb?
+### Which of below is a valid reason to create a separate collection for the sub-document instead of flattening in the document
 
-    a. Denormalization is preffered over normalization
-    b. Normalization improves write performance
-    *c. Normanilzation improves read performance
-    d. Date modelling is done based on use case and nature of queries.
-    
+	a. Sub-document will be used very rarely
+	b. Number of fields in Sub-document is more
+	*c. Embedded sub-document size or growth is larger than, document size or growth
+	d. Sub-document has a required field
+	e. None of the Above
 
-### NoSQL databases doesn't have any definite structure, schema.
+### Which of below method is invalid regarding insert
 
-    a. TRUE, because no schema is enforced.
-    *b. FALSE, because there is still an implicit schema and order.
-    
+	a. db.exampleCollection.insertOne
+	b. db.exampleCollection.insertMany
+	*c. db.exampleCollection.insertAll
+	d. db.exampleCollection.insert
+	e. None of the above
+
+### Which of below method is invalid regarding update
+
+	a. db.exampleCollection.updateOne
+	b. db.exampleCollection.updateMany
+	*c. db.exampleCollection.update
+	d. db.exampleCollection.fineOneAndUpdate
+	*e. None of the above
+
+### Which of below is valid about terminal command can be used for backup related tasks in MongoDB
+
+	a. mongodump
+	b. mongoimport
+	c. mongoexport
+	d. mongorestore
+	*e. All of the above
+
+### Which of below is considered bad practice regarding securing mongodb
+
+	a. Not setting up Authentication
+	b. Running mongodb with default port
+	c. Exposing mongodb to Internet
+	d. Not backing up database
+	*e. All of the above
+
+### Which of below helps paginate the results from mongodb
+
+	a. db.exampleCollection.find().return(`<number of records to return>`)
+	b. db.exampleCollection.find().limit(`<number of records to return>`)
+	*c. db.exampleCollection.find().skip(`<number of records to skip>`).limit(`<number of records to return>`)
+	d. db.exampleCollection.find().page(`<number of records to skip>`, `<number of records to return>`)
+	e. Pagination is not supported in MongoDB
+
+### Which is TRUE about Data modeling in MongoDb?
+
+	a. De-normalization is preferred over normalization
+	b. Data modeling is done based on use case and nature of queries
+	c. Referencing data is preferred if a field or sub document has higher cardinality
+	*d. All of the Above
+	e. None of the Above
+
+### Which of below is TRUE regarding MongoDB
+
+	a. Storing petabytes of data on a single machine is recommended for faster reads
+	b. USe stored procedures for better query performance in MonoDB
+	*c. MongoDB guarantees consistency at a specific document level
+	d. None of the above
+
+### Which of below Transaction model is usually adopted in NoSQL database based systems
+
+	a. ACID
+	b. SALT
+	*c. BASE
+	d. All of the Above
+	e. None of the Above
