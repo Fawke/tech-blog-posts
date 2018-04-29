@@ -63,15 +63,13 @@
     c. document
     d. column
 
-### Which is TRUE about Data modelling in MongoDb?
+### Which is NOT TRUE about Data modelling in MongoDb?
 
     a. Denormalization is preffered over normalization
     b. Normalization improves write performance
-    c. Normanilzation deteriorates read performance
+    *c. Normanilzation improves read performance
     d. Date modelling is done based on use case and nature of queries.
-    e. a,b,d
-    f. b,c,d
-    g. a,b,c,d
+    
 
 ### NoSQL databases doesn't have any definite structure, schema.
 
