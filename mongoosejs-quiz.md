@@ -12,7 +12,7 @@
     a. It's a Plain Old JSON object with key-value pairs and few methods.
     b. It wraps raw data with methods to perform CRUD on it.
     c. Process of copying values from query to object is called Hydration.
-    *d. All the statements are true.
+    *d. All of the above.
 
 ### What is the major benefit of having a DAO (Data Access Layer)?
 
@@ -50,14 +50,14 @@
     b. var opts = { db: { native_parser: true }}
        db = mongoose.createConnection('mongodb://user:pass@localhost:port/database', opts);
     c. db = mongoose.createConnection('mongodb://user:pass@localhost:port,anotherhost:port, yetanother:port/database');
-    *d. all are correct
+    *d. All of the above
 
 ### How do you define compound indexes in mongoose.js?
 
     *a. mySchema.index({field1: 1, field2: 1}, {unique: true});
     b. new Schema({field1: {type: Number, index: true}}, {field2: {type: Number, index: true}});
-    c. Both are correct
-    d. None are correct
+    c. All of the above.
+    d. None of the above.
 
 ### Which of these are NOT valid schema definitions in mongoose.js?
 
@@ -65,3 +65,11 @@
     b. milk: {type: Number, required: true};
     c. cheese: {type: String, enum: ['cheddar', 'parmesan', 'ricotta' ]}
     *d.butter: {type: String, required: true, quantity: 6 }
+
+### How do you define an unstructured field in Mongoose.js?
+
+    a. new mongoose.Schema({name: String, details: {}});
+    b. new mongoose.Schema({name: String, details: {type: any}});
+    c. new mongoose.Schema({name: String, details: any});
+    *d. All of the above.
+    e. You cannot leave Type unstructured in Mongoose. 
