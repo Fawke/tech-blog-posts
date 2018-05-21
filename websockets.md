@@ -101,8 +101,8 @@
 
     a. ws
     *b. wss
-    c. sws
-    d. ssw
+    c. http
+    d. https
 
 ### Which of pattern or patterns are used for implementing websockets in NodeJS?
 
