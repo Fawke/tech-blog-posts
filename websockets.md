@@ -29,7 +29,7 @@
     c. Polling
     d. All of the above.
 
-### Which one of these is **NOT** one of the popular Websocket libraries for Javascript/Node.js?
+### Which of these libraries can be used to implement for Javascript/Node.js?
 
     a. websocket
     b. socket.io
@@ -44,7 +44,7 @@
     c. Apart frpm spawning multiple instance and putting a load balancer, we need a messaging channel to communicate between different spawned instances. 
     d. It's impossible to horizontall scale a websocket server.
 
-### I want to send my chat message to all the connected clients to the socket server. I can achieve this by...
+### I want to send my chat message to all the connected clients to the socket server using socket.io library. I can achieve this by...
 
     a. socket.emit('myMessage', "hello");
     b. io.sockets.emit('myMessage', "hello");
@@ -73,3 +73,19 @@
     c. Websocket protocol specification defines `ws` and `wss` as two new URI schemes.
     *d. All statements are true.
     e. None of the statements are true.
+    
+### limit of number of ws connections on server side.
+
+### http 2 vs websockets
+
+### maximum ws with server on the browser
+
+### what is the protocol for secure ws connection
+
+### what is the underlying design pattern that ws
+
+### ws vs rest
+
+### libraries for streaming data on websockets
+
+### stateless vs stateful connections
