@@ -2,8 +2,8 @@
 
 ### What is the best use case of the Websocket protocol?
 
-    a. Multimedia Chat
-    b. Viewing football score of the past week match
+    a. Chat
+    b. Viewing football score for the past week match
     *c. Only a
     d. Both a and b
     e. None of the above
@@ -12,7 +12,7 @@
 
     a. Ad hoc messaging
     b. Relaying a live feed/stream
-    *c. Synchronized operation/or where sequence of operations matter
+    *c. A banking transaction where synchronization of events matter
     d. Push notifications/instance updates
 
 ### How does the client establishes a websocket connection with the server?
@@ -29,7 +29,7 @@
     c. Polling
     d. All of the above.
 
-### Which of these libraries can be used to implement for Javascript/Node.js?
+### Which of these libraries can be used to implement websockets in Javascript/Node.js?
 
     a. websocket
     b. socket.io
@@ -74,20 +74,64 @@
     *d. All statements are true.
     e. None of the statements are true.
     
-### limit of number of ws connections on server side.
+### Is there any limit on the number of open websocket connections per client per server port?
 
-### http 2 vs websockets
+    a. There's no limit
+    b. 10k connections
+    *c. 64k connections
+    d. None of the above
 
-### maximum ws with server on the browser
+### What's the similarity between HTTP/2 and Websockets. Choose the correct statement(s).
 
-### what is the protocol for secure ws connection
+    a. Both the protocols allow the server to push data to the client.
+    b. Both maintain an open persistent connection with the client.
+    c. HTTP/2 server push, likee websocket server push, is guaranteed to reach a client even with proxies and intermediaries in the middle.
+    d. a, c
+    *e. a, b
+    f. All of the above.
 
-### what is the underlying design pattern that ws
+### What is the major limiting factor for maximum number of open websocket connections on the server side?
 
-### ws vs rest
+    a. Limited number of available ports on the server 
+    b. Available memory on the server 
+    c. Limited number of file descriptors per socket
+    d. None of the above
 
-### libraries for streaming data on websockets
+### What is the protocol scheme for secure websocket connection?
 
-### stateless vs stateful connections
+    a. ws
+    *b. wss
+    c. sws
+    d. ssw
 
-### can websocket work behind proxy
+### Which of pattern or patterns are used for implementing websockets in NodeJS?
+
+    *a. Observer
+    b. Reactor
+    c. CSP
+    d. Modules
+	e. All of the Above
+	f. None of the Above
+
+### Which of these libraries can be used for websocket streaming?
+
+    a. socket.io
+    b. ws
+    c. socket-stream
+    *d. websocket-stream
+
+### Which of the statement(s) is **FALSE** when comparing Websockets with HTTP?
+
+    a. HTTP is uni-directional protocol, where, either a client or a server only can talk at a single instance of time.
+    b. Websocket support full dulplex communication, where client and server can talk independently of each other.
+    *c. HTTP is a lean protocol, not many headers are sent back and forth between a client and a server during a chat like application.
+    d. Websocket keeps the tcp/ip connection open whereas HTTP closes it once the request/response cycle is over.
+
+### Can websockets work behind a proxy server? Which of this below statement(s) is correct?
+
+    a. Proxy server has to be configured separately to handle websocket traffic since a websocket data frame is an uknown entity to a http server.
+    b. In case of direct connection, there won't be any problems since both the http ports 80 and 443 are open in most organizations. No speacial config required in that case.
+    c. It always best to use wss:// scheme and establish encryted connection to bypass any intermediary proxy server.
+    *d. All of the Above.
+    e. None of the Above.
+    
